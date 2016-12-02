@@ -1,0 +1,50 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity ALU is
+port(
+	A,B: in std_logic_vector(31 downto 0);
+	opcode : in std_logic_vector(2 downto 0);
+	zero: out std_logic;
+	aluresult : out std_logic_vector(31 downto 0)
+);
+end ALU;
+
+architecture arch of ALU is
+
+	component addsub
+	PORT
+	(
+		add_sub : IN STD_LOGIC ;
+		dataa : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+		datab : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+		result : OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
+	);
+	end component;
+	
+	signal arithmeticresult : std_logic_vector(31 downto 0);
+	signal output : std_logic_vector(31 downto 0);
+	
+	begin
+	zero <= '0';
+	process (A,B,opcode,arithmeticresult) 
+		begin
+		if (opcode = "111") then
+			output <= x'00000000';
+			if( inputA = inputB ) then zero <= '1';
+			else zero <= '0';
+			end if;
+		
+		else zero <= '0';
+			case opcode is
+				when "000" => output <= arithmeticresult; -- addition 
+				when "001" => output <= arithmeticresult; -- subtraction
+				when "100" => output <= (inputA or inputB); -- or operation
+				when "101" => output <= to_stdlogicvector(to_bitvector(inputB) sll 16); -- lui 
+				when others => NULL;
+			end case;
+		end if;
+		end process;
+		aluresult <= output;
+		addsubber: addsub port map (ALUop(3), A, B,arithmeticresult);
+end arch;

@@ -1,0 +1,17 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.Numeric_Std.all;
+
+entity Control is
+  port (
+    opcode  : in  std_logic_vector(5 downto 0);
+    aluop   : in  std_logic_vecotr(3 downto 0);
+    regdest : in  std_logic;
+	 extop : in  std_logic;
+	 alusrc : in  std_logic;
+	 memwr : in  std_logic;
+	 memtoreg : in  std_logic;
+    pcsrc  : in  std_logic;
+    regwr : out std_logic
+  );
+end entity Control;

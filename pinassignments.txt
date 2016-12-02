@@ -1,0 +1,161 @@
+To, Location
+
+instruction[0], PIN_N25
+instruction[1], PIN_N26
+instruction[2], PIN_P25
+instruction[3], PIN_AE14
+instruction[4], PIN_AF14
+instruction[5], PIN_AD13
+instruction[6], PIN_AC13
+instruction[7], PIN_C13
+
+location[0], PIN_B13
+location[1], PIN_A13
+PCwr, PIN_N1
+
+ProgramCounter[0], PIN_AE22
+ProgramCounter[1], PIN_AF22
+ProgramCounter[2], PIN_W19
+ProgramCounter[3], PIN_V18
+ProgramCounter[4], PIN_U18
+ProgramCounter[5], PIN_U17
+
+opcode[0], PIN_AE23
+opcode[1], PIN_AF23
+opcode[2], PIN_AB21
+opcode[3], PIN_AC22
+opcode[4], PIN_AD22
+opcode[5], PIN_AD23
+
+
+
+storeKey, PIN_G26
+
+
+clock, PIN_U4
+outputselect[0], PIN_V1
+outputselect[1], PIN_V2
+
+
+Hex7a, PIN_L3	
+Hex7b, PIN_L2
+
+Hex7c, PIN_L9
+
+Hex7d, PIN_L6
+
+Hex7e, PIN_L7
+
+Hex7f, PIN_P9
+
+Hex7g, PIN_N9
+
+
+
+Hex6a, PIN_R2	
+
+Hex6b, PIN_P4
+
+Hex6c, PIN_P3
+
+Hex6d, PIN_M2
+
+Hex6e, PIN_M3
+
+Hex6f, PIN_M5
+
+Hex6g, PIN_M4
+
+
+
+Hex5a, PIN_T2	
+Hex5b, PIN_P6
+
+Hex5c, PIN_P7
+
+Hex5d, PIN_T9
+
+Hex5e, PIN_R5
+
+Hex5f, PIN_R4
+
+Hex5g, PIN_R3
+
+
+Hex4a, PIN_U9	
+
+Hex4b, PIN_U1
+
+Hex4c, PIN_U2
+
+Hex4d, PIN_T4
+
+Hex4e, PIN_R7
+
+Hex4f, PIN_R6
+
+Hex4g, PIN_T3
+
+
+
+Hex3a, PIN_Y23	
+Hex3b, PIN_AA25
+
+Hex3c, PIN_AA26
+
+Hex3d, PIN_Y26
+
+Hex3e, PIN_Y25
+
+Hex3f, PIN_U22
+
+Hex3g, PIN_W24
+
+
+
+Hex2a, PIN_AB23
+
+Hex2b, PIN_V22
+
+Hex2c, PIN_AC25
+
+Hex2d, PIN_AC26
+
+Hex2e, PIN_AB26
+
+Hex2f, PIN_AB25
+
+Hex2g, PIN_Y24
+
+
+
+Hex1a, PIN_V20	
+
+Hex1b, PIN_V21
+
+Hex1c, PIN_W21
+
+Hex1d, PIN_Y22
+
+Hex1e, PIN_AA24
+
+Hex1f, PIN_AA23
+
+Hex1g, PIN_AB24
+
+
+
+Hex0a, PIN_AF10	
+
+Hex0b, PIN_AB12
+
+Hex0c, PIN_AC12
+
+Hex0d, PIN_AD11
+
+Hex0e, PIN_AE11
+
+Hex0f, PIN_V14
+
+Hex0g, PIN_V13
+

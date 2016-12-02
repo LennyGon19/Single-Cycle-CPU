@@ -1,0 +1,13 @@
+
+
+C:/Users/Edward Chin/Desktop/College/CSC342_3/Lab8/Project Files/Quartus/multiplier.vhd
+
+Nov 19 10PM:47:15>: The following design file, which has identical name but a different extension 
+from the specified variation file, already exists in the working directory:
+
+multiplier.bdf
+
+This may create a conflict of design files and/or lead to undesirable side
+effects.
+
+Is it OK to continue file generation?
